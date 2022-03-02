@@ -22,5 +22,96 @@
 }
 
 body{
-    background-color: rgb(36, 36, 36);
+    background-image: linear-gradient(rgb(48, 48, 48), rgb(0, 0, 0));
+}
+
+.banner-sobre{
+    max-height: fit-content;
+    max-width: fit-content;
+}
+.conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    padding: 90px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.acasa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    align-content: space-around;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.acasa-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.acasa-img{
+    height: 200px;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    align-content: space-around;
+    padding-top: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.cursos-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cursos-img{
+    height: 200px;
+}
+
+.espec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    align-content: space-around;
+    padding-top: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.espec-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.espec-img{
+    height: 200px;
 }
