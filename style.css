@@ -1,126 +1,195 @@
-.alistar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(240, 240, 240);
+}
+
+header{
+    background-color: rgb(99, 99, 99);
+}
+
+/* CSS logo e menu*/
+.cabeca{
+    position: relative;
+    width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
     align-items: center;
-    align-content: space-around;
-    padding-top: 60px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+}
+
+.logo-header{
+    width: 130px;
+    margin: 10px;
+}
+
+.menu{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.menu li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+.menu a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.menu a:hover{
+    color: rgb(153, 31, 31);
+}
+
+/* main da home*/
+
+.main{
+    background: linear-gradient(rgb(240,240,240), rgb(99,99,99));
+}
+
+.corpo-main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.titulo-main{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1.4% 1.5%;
+}
+
+.main-conteudo{
+    display: inline-block;
+    text-align: justify;
+    width: 100%;
+    vertical-align: center;
+    margin: 1.4% 1.5%;
+    /*padding: 30px 20px;*/
+    box-sizing: border-box;
+
+}
+
+.img-resumo{
+    display: inline;
+    float: left;
+    width: 50%;
+    border-radius: 15px;
+    margin-right: 30px;
+    box-shadow: 5px 5px 4px rgb(49, 49, 49);
+    transition: 150ms;
+}
+
+.img-resumo:hover{
+    width: 70%;
+}
+
+.main h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 30px;
+    border: 0 0 30px;
+}
+
+.main p{
+    font-size: 1.5rem;
+    border: 0 0 30px;
+    margin: 0 0 2em;
+}
+
+/*inscrição*/
+
+form{
+    margin: 1.4% 1.5%;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.imput-padrao{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.opcao-horario legend{
+    margin-top: 20px; 
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 35%;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: rgb(49, 49, 49);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+.enviar:hover{
+    background: rgb(153, 31, 31);
+    transform: scale(1.05);
+}
+
+/*footer*/
+
+footer{
+    background: rgb(99, 99, 99);
 }
 
 .rodape{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex; 
+    justify-content:space-between;
     align-items: center;
-    padding-top: 15px;
-    font-size: 10px;
-    color: rgb(255, 255, 255);
-    border-top: 0.4px solid rgba(255, 255, 255, 0.068);
-    margin-top: 70px;
 }
 
-body{
-    background-image: linear-gradient(rgb(48, 48, 48), rgb(0, 0, 0));
+.social-container{
+    float: left;
 }
 
-.banner-sobre{
-    max-height: fit-content;
-    max-width: fit-content;
-}
-.conteudo-sobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    padding: 90px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+.social-container li{
+    display: inline;
+    margin: 10px;
 }
 
-
-.acasa{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-    align-content: space-around;
-    color: rgb(255, 255, 255);
-    text-align: center;
+.fa-discord:before {
+    color: rgb(240, 240, 240);
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
 
-.acasa-texto{
-    display: flex;
-    order: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    color: rgb(255, 255, 255);
-    text-align: center;
+.fa-facebook:before {
+    color: rgb(240, 240, 240);
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
 
-.acasa-img{
-    max-height: 300px;
-    max-width: 300px;
-    border-radius: 20px;
-}
-.cursos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-    align-content: space-around;
-    padding-top: 80px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-.cursos-texto{
-    display: flex;
-    order: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    color: rgb(255, 255, 255);
-    text-align: center;
+.fa-twitch:before {
+    color: rgb(240, 240, 240);
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
 
-.cursos-img{
-    max-height: 300px;
-    max-width: 300px;
-    border-radius: 40px;
+.texto-rodape{
+    color: rgb(240, 240, 240);
+    font-weight: bold;
 }
 
-.espec{
-    display: flex;
-    order: 1;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-    align-content: space-around;
-    padding-top: 80px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-.espec-texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.espec-img{
-    max-height: 300px;
-    max-width: 300px;
-    border-radius: 40px;
-    
+.lobo{
+    height: 200px;
 }
